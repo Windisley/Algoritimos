@@ -112,6 +112,8 @@ function printTag(number) {
 
 printTag(5);
 
+
+
 ### Localizado na pasta printTags
 
 ----
