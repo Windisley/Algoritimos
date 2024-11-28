@@ -80,3 +80,39 @@ O algoritmo **`sumDiagonal`** recebe uma matriz quadrada (array bidimensional) c
 
    ----
 
+   # Gerador de Tags em Escada
+
+Este projeto implementa uma função em JavaScript chamada `printTag`, que gera uma "escada" de hashtags (`#`) com base em um número fornecido como parâmetro. O resultado é exibido diretamente na página HTML e também no console do navegador.
+
+![printTag](https://github.com/user-attachments/assets/a6f3f07d-c46a-4848-b83e-cc9c303d27fb)
+
+---
+
+![code hashtags](https://github.com/user-attachments/assets/d5c1289d-8fdc-4e4b-bcc9-9a9aa37e206c)
+
+
+
+## 🛠️ Código
+
+```javascript
+const $strong = document.querySelector(".printtext");
+
+function printTag(number) {
+  let text = "";
+  let tags = "";
+  let space = "\n";
+
+  for (let j = 0; j < number; j++) {
+    tags += "#";
+
+    $strong.innerHTML = `${(text += "<br>" + tags + space)}`;
+  }
+  console.log(text);
+}
+
+printTag(5);
+
+### Localizado na pasta printTags
+
+----
+
